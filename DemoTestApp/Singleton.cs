@@ -24,17 +24,3 @@ public sealed class Singleton
 	}
 }
 
-
-public static  class StaticClass
-{
-	static StaticClass()
-	{
-
-	}
-
-	virtual string GetName()
-	{
-		return "STtaic class";
-	}
-}
-
