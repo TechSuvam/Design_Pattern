@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DemoTestApp;
+using DesignPattern;
 
 //Singleton Pattern 
 
@@ -23,4 +24,9 @@ string mainOperation = component.Operation();
 IComponent decorateComponentA = new Decorator_A();
 string decorateA_obj = decorateComponentA.Operation();
 
+
+//Facade Pattern 
+
+Facade obj = new(new Subsystem_One(), new Subsystem_Two());
+obj.FacadeDesign();
 
