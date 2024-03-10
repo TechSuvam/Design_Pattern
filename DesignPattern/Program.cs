@@ -30,3 +30,8 @@ string decorateA_obj = decorateComponentA.Operation();
 Facade obj = new(new Subsystem_One(), new Subsystem_Two());
 obj.FacadeDesign();
 
+//Builder Pattern 
+
+var builder = new Builder().AddCpu("intel").Build();
+
+
