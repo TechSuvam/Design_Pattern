@@ -8,7 +8,7 @@
     }
     public class Builder
     {
-        private readonly Computer computer = new Computer();
+        private readonly Computer computer = new();
 
         public Builder AddCpu(string cpu)
         {

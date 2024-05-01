@@ -19,11 +19,11 @@ public class Component : IComponent
 {
     public string Operation()
     {
-        return "ConcreteComponent operation";
+        return "Concrete Component operation";
     }
 }
 
-// I don't wat to change the behavior or the Component class, I create a Decorator  Interface
+// I don't want to change the behavior or the Component class, I create a Decorator  Interface
 public interface  IDecorator : IComponent
 {
     public void Decorate();
