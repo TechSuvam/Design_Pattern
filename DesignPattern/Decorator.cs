@@ -5,9 +5,9 @@
 // without affecting the behavior of other objects from the same class. In C#, you can implement the Decorator Pattern using interfaces and inheritance.
 
 
-// Interface is a magiical component in OOPS 
+// Interface is a magical component in OOPS 
 
-//Manin interface
+//Main interface
 public interface IComponent
 {
     string Operation();
@@ -52,6 +52,47 @@ public class Decorator_B : IDecorator
     public void Decorate()
     {
         Console.WriteLine("Decorate Class B");
+    }
+}
+
+
+public interface IGame
+{
+    public void ClassicalGame();
+}
+
+public class Game : IGame
+{
+    public void ClassicalGame()
+    {
+        Console.WriteLine("This is a classical game.");
+    }
+}
+
+
+public interface INewGameType : IGame
+{
+    public void BlitzGame();
+    public void Rapidgame();
+
+}
+
+
+public class NewGameType  : INewGameType
+{
+    public void ClassicalGame()
+    {
+        Console.WriteLine("This is a classical game with new rules.");
+    }
+
+    public void BlitzGame()
+    {
+        Console.WriteLine("This is a blitz game with new rules.");
+    }
+
+    public void Rapidgame()
+    {
+        Console.WriteLine("This is a rapid game with new rules.");
     }
 }
 
